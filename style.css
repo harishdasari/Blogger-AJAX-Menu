@@ -1,0 +1,66 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #6497CF;
+}
+
+a:hover {
+	color: #333;
+}
+
+:focus {
+	outline: none;
+}
+
+html {
+	background: #e8e8e8 url('http://i.imgur.com/lnbct.png');
+	-webkit-box-shadow: 0 0 100px rgba(0,0,0,0.15) inset;
+	-moz-box-shadow: 0 0 100px rgba(0,0,0,0.15) inset;
+	box-shadow: 0 0 100px rgba(0,0,0,0.15) inset;
+	min-height: 100%;
+}
+
+body {
+	font: normal 13px/1.6 "Helvetica Neue", Helvetica, Arial, sans-serif;
+	width: 960px;
+	margin: 25px auto;
+}
+
+h1 {
+	margin: 60px 0 10px;
+	text-shadow: 0 1px 0px #fff;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-transform: capitalize;
+	font-size: 45px;
+	text-align: center;
+	font-weight: normal;
+	color: #808080;
+}
+
+h1 span {
+	font-weight: bold;
+}
+
+p.description {
+	font-family: 'Goudy Bookletter 1911', serif;
+	text-align: center;
+	color: #949494;
+	font-size: 14px;
+	text-shadow: 0 1px rgba(255,255,255,0.5);
+}
+#w2bajaxmenu {
+	margin: 60px auto;
+	-webkit-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+	box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+.credits {
+	font-size: 10px;
+	text-align: right;
+	font-style: italic;
+	color: #aaa;
+}

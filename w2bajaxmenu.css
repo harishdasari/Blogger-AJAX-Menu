@@ -1,0 +1,178 @@
+/* Menu Stylings */
+.w2bmenu *{
+	margin: 0;
+	padding: 0;
+}
+ul.w2bmenu {
+	background: #ededed;
+	background: -moz-linear-gradient(top,  #ededed 0%, #e0e0e0 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(100%,#e0e0e0));
+	background: -webkit-linear-gradient(top,  #ededed 0%,#e0e0e0 100%);
+	background: -o-linear-gradient(top,  #ededed 0%,#e0e0e0 100%);
+	background: -ms-linear-gradient(top,  #ededed 0%,#e0e0e0 100%);
+	background: linear-gradient(to bottom,  #ededed 0%,#e0e0e0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#e0e0e0',GradientType=0 );
+
+	list-style: none;
+	width: 960px;
+	margin: auto;
+	border: 1px solid #cccccc;
+	line-height: 1;
+}
+ul.w2bmenu:after{
+	margin: 0;
+	padding: 0;
+	content: ' ';
+	display: block;
+	height: 0px;
+	clear: both;
+}
+ul.w2bmenu li{
+	list-style: none;
+	float: left;
+	position:relative;
+	margin: 0;
+	padding: 0;
+}
+ul.w2bmenu li a{
+	margin: 0;
+	padding: 12px 16px;
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	color: #6b6b6b;
+	text-shadow: 0 1px 0 #fff;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 12px;
+	display: block;
+}
+ul.w2bmenu li a:hover,
+ul.w2bmenu li a.hoverover{
+	background: #f5f5f5;
+}
+
+ul.w2bmenu ul{
+	position: absolute;
+	display: none;
+	top: 100%;
+	border:1px solid #ccc;
+}
+ul.w2bmenu li:hover > ul{
+	display: block;
+}
+ul.w2bmenu ul li{
+	float: none;
+	min-width: 160px;
+	background:#f5f5f5;
+	text-shadow: none;
+}
+ul.w2bmenu ul li a{
+	padding: 12px 14px; 
+	text-transform: none;
+	font-weight: normal;
+}
+ul.w2bmenu ul li a:hover,
+ul.w2bajaxmenu ul li a.hoverover{
+	background: #fff;
+}
+ul.w2bmenu ul ul{
+	display: none;
+	left: 100%;
+	top: 0;
+}
+
+/* AJAX Menu Stylings */
+ul.w2bajaxmenu li div.submenu {
+	display: none;
+	position: absolute;
+	width: 600px;
+	z-index: 90;
+	left: -1px;
+	top: 100%;
+	overflow: hidden;
+	min-height: 150px;
+	background: #fff;
+	border:1px solid #cccccc;
+	border-top: 0 none;
+}
+ul.w2bajaxmenu li:hover div.submenu {
+	display: block;
+}
+ul.w2bajaxmenu ul {
+	display: block !important;
+	border: 0 none !important;
+}
+ul.w2bajaxmenu ul li{
+	background: none !important;
+}
+ul.w2bajaxmenu ul.verticlemenu{
+	position: absolute;
+	width: 33%;
+	left:0;
+	top:0;
+	bottom: 0;
+	background: #f5f5f5;
+}
+ul.w2bajaxmenu ul.postslist {
+	position: relative;
+	display: block;
+	width:65%;
+	float: right;
+	margin: 8px 0;
+	background: none;
+}
+ul.w2bajaxmenu ul.postslist li{
+	display: block;
+	overflow: hidden;
+	border-bottom: 1px #eee solid;
+	position: relative;
+	min-height: 60px;
+	padding: 8px 8px 8px 110px;
+}
+ul.w2bajaxmenu ul.postslist li:last-child{
+	border-bottom: none 0;
+}
+ul.w2bajaxmenu ul.postslist li .imgCont{
+	position: absolute;
+	left: 0;
+	top:8px;
+	width: 100px;
+	height: 60px;
+	overflow: hidden;
+	border:1px solid #dcdcdc;
+	font-size: 0;
+	line-height: 0;
+}
+ul.w2bajaxmenu ul.postslist li .imgCont img{
+	position: relative;
+	top:-20px;
+	padding: 0;
+	width: 100px;
+	height: 100px;
+	display: block;
+}
+ul.w2bajaxmenu ul.postslist li a{
+	display: block;
+	line-height: 1.4;
+	padding: 0;
+}
+ul.w2bajaxmenu .loader{
+	background:url('http://i.imgur.com/SeivG.gif') no-repeat scroll 0 0 transparent;
+	width:22px;
+	height:22px;
+	position: absolute;
+	top:50%;
+	margin-top: -11px;
+	right:5px;
+}
+ul.w2bajaxmenu .menuArrow {
+	border-bottom: 4px solid transparent;
+	border-top: 4px solid transparent;
+	border-left: 4px solid #999999;
+	display: block;
+	height: 0;
+	margin-top: -4px;
+	position: absolute;
+	right: 11px;
+	top: 50%;
+	width: 0;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>Mashable Style Ajax Menu for Blogger</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+	<link rel="stylesheet" href="w2bajaxmenu.css" media="all" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript" src="ajaxbloggermenu.js"></script>
+<body>
+
+	<h1><span>Mashable</span> style Ajax Menu for Blogger</h1>
+	<p class="description">A AJAX Blogger Navigation Menu inspired from Mashable. By <a href="http://about.me/harishdasari" target="_blank">Harish Dasari</a> <span class="amp">&amp;</span> <a href="http://www.wayblogging.org/" target="_blank">Way2Blogging</a></p>
+	<ul id="w2bajaxmenu" class="w2bmenu">
+		<li>
+			<a href="#">Home</a>
+		</li>
+		<li>
+			<a href="#">Example 1</a>
+			<ul>
+				<li><a href="http://www.spiceupyourblog.com/search/label/AdSense">Sample Label</a></li>
+				<li><a href="http://www.spiceupyourblog.com/search/label/Gadgets?q=harish">Label w/ Search</a></li>
+				<li><a href="http://www.spiceupyourblog.com/search?q=way2blogging">Search Query</a></li>
+				<li><a href="http://www.spiceupyourblog.com/search?q=This+is+long+query+you+do+not+get+any+results,+so+try+others">Unknown Search</a>
+			</ul>
+		</li>
+		<li>
+			<a href="#">Example 2</a>
+			<ul>
+				<li><a href="http://www.spiceupyourblog.com/search/label/Design">Design</a></li>
+				<li><a href="http://www.spiceupyourblog.com/search/label/Facebook?q=Like+Button">Facebook</a></li>
+				<li><a href="http://www.spiceupyourblog.com/search/label/Templates">Templates</a></li>
+				<li><a href="http://www.spiceupyourblog.com/search?q=Guest+Posts">Guest Posts</a></li>
+				<li><a href="#">No URL</a></li>
+					<!-- This will be removed -->
+					<ul>
+						<li><a href="http://www.spiceupyourblog.com/search/label/Design">Design</a></li>
+						<li><a href="http://www.spiceupyourblog.com/search/label/Facebook?q=Like+Button">Facebook</a></li>
+						<li><a href="http://www.spiceupyourblog.com/search/label/Templates">Templates</a></li>
+						<li><a href="http://www.spiceupyourblog.com/search?q=Guest+Posts">Guest Posts</a></li>
+						<li><a href="http://www.spiceupyourblog.com/search?q=This+is+long+query+you+do+not+get+any+results,+so+try+others">Unknown Search</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li><a href="http://www.way2blogging.org">Blogger</a></li>
+		<li><a href="http://www.genesisawesome.com">WordPress</a></li>
+	</ul>
+
+	<div class="credits">Example Blogger blog : <a href="http://www.spiceupyourblog.com/" target="_blank">SpiceUpYourBlog</a></div>
+
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$('#w2bajaxmenu').ajaxBloggerMenu();
+		});
+	</script>
+
+</body>
+</html>

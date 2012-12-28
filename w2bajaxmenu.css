@@ -4,20 +4,9 @@
 	padding: 0;
 }
 ul.w2bmenu {
-	background: #ededed;
-	background: -moz-linear-gradient(top,  #ededed 0%, #e0e0e0 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(100%,#e0e0e0));
-	background: -webkit-linear-gradient(top,  #ededed 0%,#e0e0e0 100%);
-	background: -o-linear-gradient(top,  #ededed 0%,#e0e0e0 100%);
-	background: -ms-linear-gradient(top,  #ededed 0%,#e0e0e0 100%);
-	background: linear-gradient(to bottom,  #ededed 0%,#e0e0e0 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#e0e0e0',GradientType=0 );
-
 	list-style: none;
-	width: 960px;
-	margin: auto;
-	border: 1px solid #cccccc;
 	line-height: 1;
+	overflow: visible !important;
 }
 ul.w2bmenu:after{
 	margin: 0;
@@ -29,25 +18,26 @@ ul.w2bmenu:after{
 }
 ul.w2bmenu li{
 	list-style: none;
-	float: left;
 	position:relative;
-	margin: 0;
-	padding: 0;
+	float: left;
+	margin: 0 !important;
+	padding: 0 !important;
 }
 ul.w2bmenu li a{
 	margin: 0;
-	padding: 12px 16px;
-	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
-	color: #6b6b6b;
+	padding: 12px 16px !important;
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif !important;
+	color: #6b6b6b !important;
 	text-shadow: 0 1px 0 #fff;
-	font-weight: 700;
-	text-transform: uppercase;
-	font-size: 12px;
-	display: block;
+	font-weight: 700 !important;
+	text-transform: uppercase !important;
+	font-size: 12px !important;
+	display: block !important;
+	border: 0 none !important;
 }
 ul.w2bmenu li a:hover,
 ul.w2bmenu li a.hoverover{
-	background: #f5f5f5;
+	background: #f5f5f5 !important;
 }
 
 ul.w2bmenu ul{
@@ -72,7 +62,7 @@ ul.w2bmenu ul li a{
 }
 ul.w2bmenu ul li a:hover,
 ul.w2bajaxmenu ul li a.hoverover{
-	background: #fff;
+	background: #fff !important;
 }
 ul.w2bmenu ul ul{
 	display: none;
@@ -97,12 +87,16 @@ ul.w2bajaxmenu li div.submenu {
 ul.w2bajaxmenu li:hover div.submenu {
 	display: block;
 }
-ul.w2bajaxmenu ul {
+ul.w2bajaxmenu ul ,
+ul.w2bajaxmenu ul li{
 	display: block !important;
 	border: 0 none !important;
+	margin: 0 !important;
+	padding:0 !important;
 }
 ul.w2bajaxmenu ul li{
 	background: none !important;
+	float: none !important;
 }
 ul.w2bajaxmenu ul.verticlemenu{
 	position: absolute;
@@ -117,7 +111,7 @@ ul.w2bajaxmenu ul.postslist {
 	display: block;
 	width:65%;
 	float: right;
-	margin: 8px 0;
+	margin: 8px 0 !important;
 	background: none;
 }
 ul.w2bajaxmenu ul.postslist li{
@@ -126,7 +120,7 @@ ul.w2bajaxmenu ul.postslist li{
 	border-bottom: 1px #eee solid;
 	position: relative;
 	min-height: 60px;
-	padding: 8px 8px 8px 110px;
+	padding: 8px 8px 8px 110px !important;
 }
 ul.w2bajaxmenu ul.postslist li:last-child{
 	border-bottom: none 0;
@@ -153,7 +147,7 @@ ul.w2bajaxmenu ul.postslist li .imgCont img{
 ul.w2bajaxmenu ul.postslist li a{
 	display: block;
 	line-height: 1.4;
-	padding: 0;
+	padding: 0 !important;
 }
 ul.w2bajaxmenu .loader{
 	background:url('http://i.imgur.com/SeivG.gif') no-repeat scroll 0 0 transparent;
@@ -175,4 +169,16 @@ ul.w2bajaxmenu .menuArrow {
 	right: 11px;
 	top: 50%;
 	width: 0;
+}
+
+#w2bajaxmenu {
+	background: #ededed;
+	background: -moz-linear-gradient(top,  #ededed 0%, #e0e0e0 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(100%,#e0e0e0));
+	background: -webkit-linear-gradient(top,  #ededed 0%,#e0e0e0 100%);
+	background: -o-linear-gradient(top,  #ededed 0%,#e0e0e0 100%);
+	background: -ms-linear-gradient(top,  #ededed 0%,#e0e0e0 100%);
+	background: linear-gradient(to bottom,  #ededed 0%,#e0e0e0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#e0e0e0',GradientType=0 );
+	border: 1px solid #cccccc;
 }
